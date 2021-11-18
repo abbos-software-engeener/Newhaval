@@ -46,8 +46,6 @@ class CarModel(models.Model):
     title_3 = models.CharField(max_length=150)
     created_at = models.DateTimeField(auto_now_add=True)
 
-    def __str__(self):
-        return self.title, self.title_1, self.title_2, self.title_3
 
     class Meta:
         verbose_name = ('car')
